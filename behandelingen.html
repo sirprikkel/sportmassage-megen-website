@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behandelingen | Sportmassage Megen</title>
+  <meta name="description" content="Sportmassage, wellness massage, tapen en bandageren, algeheel onderzoek. Bekijk alle behandelingen.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#8B5CF6', secondary: '#C4B5FD', cta: '#10B981', bg: '#FAF5FF', txt: '#4C1D95' },
+          fontFamily: { serif: ['Lora', 'serif'], sans: ['Raleway', 'sans-serif'] },
+          borderRadius: { 'organic': '24px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #10B981; transition: width 300ms ease; }
+    .nav-link:hover::after { width: 100%; }
+  </style>
+<script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="88b26958-d5c7-48cc-9b4d-082f6dad63f8"></script>
+</head>
+<body class="bg-bg text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="font-serif text-xl font-bold text-primary">Sportmassage Megen</a>
+      <button id="menu-btn" class="md:hidden cursor-pointer p-2" aria-label="Menu">
+        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-txt font-medium cursor-pointer">Home</a>
+        <a href="over-mij.html" class="nav-link text-txt font-medium cursor-pointer">Over mij</a>
+        <a href="behandelingen.html" class="nav-link text-txt font-medium cursor-pointer">Behandelingen</a>
+        <a href="tarieven.html" class="nav-link text-txt font-medium cursor-pointer">Tarieven</a>
+        <a href="contact.html" class="nav-link text-txt font-medium cursor-pointer bg-cta text-white px-5 py-2 rounded-lg hover:opacity-90 transition-all duration-200">Contact</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="flex flex-col px-4 py-4 gap-3">
+        <a href="index.html" class="text-txt font-medium py-2 cursor-pointer">Home</a>
+        <a href="over-mij.html" class="text-txt font-medium py-2 cursor-pointer">Over mij</a>
+        <a href="behandelingen.html" class="text-txt font-medium py-2 cursor-pointer">Behandelingen</a>
+        <a href="tarieven.html" class="text-txt font-medium py-2 cursor-pointer">Tarieven</a>
+        <a href="contact.html" class="text-txt font-medium py-2 cursor-pointer bg-cta text-white px-5 py-2 rounded-lg text-center">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-12 bg-gradient-to-br from-primary/10 to-bg">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold text-txt mb-4">Behandelingen</h1>
+      <p class="text-gray-600 text-lg">Van sportmassage tot ontspanning — altijd op maat.</p>
+    </div>
+  </section>
+
+  <!-- Sportmassage -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block bg-primary/10 text-primary font-semibold px-4 py-1.5 rounded-full text-sm mb-4">Sportmassage</div>
+          <h2 class="font-serif text-3xl font-bold text-txt mb-6">Optimaal presteren, sneller herstellen</h2>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>Sporten is goed voor het lichaam maar vormt ook een zware belasting daarvoor. De sportmassage kan op twee manieren ingezet worden: als voorbereiding (stimulerend) op de belasting van het lichaam en voor een sneller herstel van het lichaam na belasting (sederend). Sportmassage, mits goed toegepast, is niet alleen voor topsporters van belang, maar voor iedereen die graag sport!</p>
+          </div>
+          <div class="mt-8 space-y-6">
+            <div class="bg-white rounded-organic p-6 shadow-sm">
+              <h3 class="font-serif font-bold text-txt mb-2">Stimulerende massage</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">De stimulerende massage wordt gegeven vóór de sportieve inspanning. Dit is belangrijk om een goede doorbloeding van de spieren te verkrijgen zodat het lichaam de belasting goed aankan. Het uiteindelijke doel is om blessures zoveel mogelijk te vermijden. De stimulerende massage vindt plaats voor de warming up, maar mag die niet vervangen!</p>
+            </div>
+            <div class="bg-white rounded-organic p-6 shadow-sm">
+              <h3 class="font-serif font-bold text-txt mb-2">Sederende massage</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Ná de sportieve inspanning wordt een sederende massage gegeven. Deze massage zorgt voor een versnelde afvoer van afvalstoffen. Daardoor kan spierpijn voorkomen worden en het herstel van de spieren wordt verkort en bevorderd. De sederende massage kan meteen ná het sporten plaatsvinden, maar kan bijvoorbeeld ook de dag erna gegeven worden.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/Sportmassage.jpeg" alt="Sportmassage behandeling" class="rounded-organic shadow-xl w-full object-cover" loading="lazy">
+          <img src="images/hardloper.jpg" alt="Hardloper" class="rounded-organic shadow-lg w-2/3 -mt-12 ml-auto relative z-10" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <img src="images/wellness.jpg" alt="Wellness massage" class="rounded-organic shadow-xl w-full object-cover" loading="lazy">
+          <img src="images/wellness2.jpg" alt="Wellness ontspanning" class="rounded-organic shadow-lg w-2/3 -mt-12 mr-auto relative z-10" loading="lazy">
+        </div>
+        <div class="order-1 md:order-2">
+          <div class="inline-block bg-cta/10 text-cta font-semibold px-4 py-1.5 rounded-full text-sm mb-4">Wellness massage</div>
+          <h2 class="font-serif text-3xl font-bold text-txt mb-6">Ontspanning voor lichaam en geest</h2>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>Het doel van een wellnessmassage is om het lichaam zich te laten ontspannen en iemand een moment van rust te bieden. Tegenwoordig leiden veel mensen een druk en gejaagd bestaan, wat stress kan veroorzaken. Daardoor kunnen lichamelijke klachten optreden, zoals bijvoorbeeld: nekpijn, hoofdpijn, rugklachten, gewrichtspijnen en vastzittende spieren.</p>
+            <p>Een wellnessmassage zorgt voor een betere doorbloeding en de flexibiliteit van het lichaam wordt vergroot. Ook stimuleert deze massage het zelf genezende vermogen van het lichaam. En, minstens zo belangrijk, een regelmatige massage biedt ontspanning van het lichaam en ook de geest vindt daardoor een moment van rust!</p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="bg-bg text-txt px-3 py-1 rounded-full text-sm">Nekpijn</span>
+            <span class="bg-bg text-txt px-3 py-1 rounded-full text-sm">Hoofdpijn</span>
+            <span class="bg-bg text-txt px-3 py-1 rounded-full text-sm">Rugklachten</span>
+            <span class="bg-bg text-txt px-3 py-1 rounded-full text-sm">Gewrichtspijn</span>
+            <span class="bg-bg text-txt px-3 py-1 rounded-full text-sm">Vastzittende spieren</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tapen -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block bg-secondary/30 text-primary font-semibold px-4 py-1.5 rounded-full text-sm mb-4">Tapen & bandageren</div>
+          <h2 class="font-serif text-3xl font-bold text-txt mb-6">Ondersteuning bij blessures</h2>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>Een sportmasseur kan een tape aanleggen bij een beginnende of juist een bijna uitbehandelde blessure. Zo'n tape biedt ondersteuning aan de blessuregevoelige plaats als u (weer) wilt gaan sporten. De niet-elastische sporttape stabiliseert en ondersteunt de gewrichten. De tape wordt aangebracht kort voor het sporten en dient daarna weer verwijderd te worden.</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/taping.jpg" alt="Tapen en bandageren" class="rounded-organic shadow-xl w-full object-cover" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Algeheel onderzoek -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-block bg-primary/10 text-primary font-semibold px-4 py-1.5 rounded-full text-sm mb-4">Algeheel onderzoek</div>
+      <h2 class="font-serif text-3xl font-bold text-txt mb-8">Grondige analyse van uw lichaam</h2>
+      <div class="grid sm:grid-cols-2 gap-6 text-left">
+        <div class="bg-bg rounded-organic p-6">
+          <h3 class="font-serif font-bold text-txt mb-2">Anamnese</h3>
+          <p class="text-gray-600 text-sm">Uitgebreid vraaggesprek over uw klachten en sporthistorie.</p>
+        </div>
+        <div class="bg-bg rounded-organic p-6">
+          <h3 class="font-serif font-bold text-txt mb-2">Inspectie</h3>
+          <p class="text-gray-600 text-sm">Houdingsonderzoek om afwijkingen en onbalans op te sporen.</p>
+        </div>
+        <div class="bg-bg rounded-organic p-6">
+          <h3 class="font-serif font-bold text-txt mb-2">Functieonderzoek</h3>
+          <p class="text-gray-600 text-sm">Onderzoek naar het bewegingsapparaat en mobiliteit.</p>
+        </div>
+        <div class="bg-bg rounded-organic p-6">
+          <h3 class="font-serif font-bold text-txt mb-2">Behandelplan</h3>
+          <p class="text-gray-600 text-sm">Beoordeling van blessures, eventueel doorverwijzing en een persoonlijk behandelplan.</p>
+        </div>
+      </div>
+      <p class="text-gray-500 text-sm mt-6 italic">Let op: een sportmasseur mag geen blessures behandelen. Bij blessures wordt doorverwezen naar een geneeskundige.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-br from-primary to-primary/80 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-serif text-3xl font-bold mb-4">Behandeling nodig?</h2>
+      <p class="text-white/90 mb-8">Neem contact op voor een afspraak of bekijk eerst de tarieven.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-cta hover:bg-cta/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 cursor-pointer">Contact opnemen</a>
+        <a href="tarieven.html" class="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 cursor-pointer border border-white/30">Bekijk tarieven</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-serif text-white text-lg font-bold mb-4">Sportmassage Megen</h3>
+          <p class="leading-relaxed">Sanne Schmidhamer<br>Elzenstraat 1<br>5366 CA Megen</p>
+          <p class="mt-3">
+            <a href="tel:0640417406" class="hover:text-white transition-colors duration-200 cursor-pointer">06-40417406</a><br>
+            <a href="mailto:sportmassagemegen@gmail.com" class="hover:text-white transition-colors duration-200 cursor-pointer">sportmassagemegen@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="font-serif text-white text-lg font-bold mb-4">Behandelingen</h3>
+          <ul class="space-y-2">
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Sportmassage</a></li>
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Wellness massage</a></li>
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tapen & bandageren</a></li>
+            <li><a href="tarieven.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tarieven</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-serif text-white text-lg font-bold mb-4">Keurmerk</h3>
+          <p class="leading-relaxed mb-3">Aangesloten bij het Nederlands Genootschap voor Sportmassage</p>
+          <a href="http://www.ngsmassage.nl" target="_blank" rel="noopener" class="hover:text-white transition-colors duration-200 cursor-pointer">www.ngsmassage.nl</a>
+          <img src="images/logo_ngs.png" alt="NGS logo" class="mt-4 h-12 opacity-70" loading="lazy">
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-8 text-center text-sm">
+        <p>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

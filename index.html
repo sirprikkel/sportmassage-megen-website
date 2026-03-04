@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport- en Wellness Massage Megen | Sanne Schmidhamer</title>
+  <meta name="description" content="Gediplomeerd sportmasseur in Megen. Sportmassage, wellnessmassage, tapen en bandageren. NGS geregistreerd.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B5CF6',
+            secondary: '#C4B5FD',
+            cta: '#10B981',
+            bg: '#FAF5FF',
+            txt: '#4C1D95',
+          },
+          fontFamily: {
+            serif: ['Lora', 'serif'],
+            sans: ['Raleway', 'sans-serif'],
+          },
+          borderRadius: {
+            'organic': '24px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    .breathing { animation: breathe 4s ease-in-out infinite; }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .blob {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      animation: morph 8s ease-in-out infinite;
+    }
+    @keyframes morph {
+      0%, 100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+      50% { border-radius: 58% 42% 30% 70% / 55% 55% 45% 45%; }
+    }
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+      background: #10B981; transition: width 300ms ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+  </style>
+<script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="88b26958-d5c7-48cc-9b4d-082f6dad63f8"></script>
+</head>
+<body class="bg-bg text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="font-serif text-xl font-bold text-primary">Sportmassage Megen</a>
+      <button id="menu-btn" class="md:hidden cursor-pointer p-2" aria-label="Menu">
+        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-txt font-medium cursor-pointer">Home</a>
+        <a href="over-mij.html" class="nav-link text-txt font-medium cursor-pointer">Over mij</a>
+        <a href="behandelingen.html" class="nav-link text-txt font-medium cursor-pointer">Behandelingen</a>
+        <a href="tarieven.html" class="nav-link text-txt font-medium cursor-pointer">Tarieven</a>
+        <a href="contact.html" class="nav-link text-txt font-medium cursor-pointer bg-cta text-white px-5 py-2 rounded-lg hover:opacity-90 transition-all duration-200">Contact</a>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="flex flex-col px-4 py-4 gap-3">
+        <a href="index.html" class="text-txt font-medium py-2 cursor-pointer">Home</a>
+        <a href="over-mij.html" class="text-txt font-medium py-2 cursor-pointer">Over mij</a>
+        <a href="behandelingen.html" class="text-txt font-medium py-2 cursor-pointer">Behandelingen</a>
+        <a href="tarieven.html" class="text-txt font-medium py-2 cursor-pointer">Tarieven</a>
+        <a href="contact.html" class="text-txt font-medium py-2 cursor-pointer bg-cta text-white px-5 py-2 rounded-lg text-center">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/slide-massage-megen-1.jpg" alt="Sportmassage behandeling" class="w-full h-full object-cover" loading="eager">
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="max-w-2xl">
+        <div class="inline-block bg-cta/20 text-cta font-semibold px-4 py-1.5 rounded-full text-sm mb-6">NGS Geregistreerd Sportmasseur</div>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          Sport- en Wellness<br>Massage Megen
+        </h1>
+        <p class="text-white/90 text-lg sm:text-xl mb-8 leading-relaxed font-light">
+          Gediplomeerd sportmasseur Sanne Schmidhamer. Sportmassage, wellnessmassage, tapen en bandageren vanuit de praktijk aan huis in Megen.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="bg-cta hover:bg-cta/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 cursor-pointer text-center">Maak een afspraak</a>
+          <a href="behandelingen.html" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 cursor-pointer text-center border border-white/30">Bekijk behandelingen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-primary py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl font-bold text-white font-serif">10+</div>
+        <div class="text-white/80 mt-1">Jaar ervaring</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold text-white font-serif">NGS</div>
+        <div class="text-white/80 mt-1">Gecertificeerd</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold text-white font-serif">⭐ 5.0</div>
+        <div class="text-white/80 mt-1">Google Reviews</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold text-white font-serif">3</div>
+        <div class="text-white/80 mt-1">Behandelingen</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section class="py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-txt mb-4">Behandelingen</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">Van sportmassage tot ontspanning — altijd afgestemd op uw persoonlijke behoeften.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Sportmassage -->
+        <a href="behandelingen.html" class="group bg-white rounded-organic p-8 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer hover:-translate-y-2">
+          <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+            <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-txt mb-3">Sportmassage</h3>
+          <p class="text-gray-600 leading-relaxed">Stimulerende massage vóór en sederende massage ná sportieve inspanning. Voor betere doorbloeding en sneller herstel.</p>
+          <div class="mt-4 text-cta font-semibold group-hover:translate-x-1 transition-transform duration-200">Meer info →</div>
+        </a>
+        <!-- Wellness -->
+        <a href="behandelingen.html" class="group bg-white rounded-organic p-8 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer hover:-translate-y-2">
+          <div class="w-14 h-14 bg-cta/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-cta/20 transition-colors duration-300">
+            <svg class="w-7 h-7 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-txt mb-3">Wellness massage</h3>
+          <p class="text-gray-600 leading-relaxed">Ontspanning voor lichaam en geest. Betere doorbloeding, meer flexibiliteit en een moment van rust.</p>
+          <div class="mt-4 text-cta font-semibold group-hover:translate-x-1 transition-transform duration-200">Meer info →</div>
+        </a>
+        <!-- Tapen -->
+        <a href="behandelingen.html" class="group bg-white rounded-organic p-8 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer hover:-translate-y-2">
+          <div class="w-14 h-14 bg-secondary/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary/50 transition-colors duration-300">
+            <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-txt mb-3">Tapen & bandageren</h3>
+          <p class="text-gray-600 leading-relaxed">Ondersteuning bij beginnende of bijna uitbehandelde blessures. De sporttape stabiliseert en ondersteunt de gewrichten.</p>
+          <div class="mt-4 text-cta font-semibold group-hover:translate-x-1 transition-transform duration-200">Meer info →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over mij preview -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="relative">
+          <div class="blob bg-secondary/30 absolute -top-8 -left-8 w-72 h-72 -z-10"></div>
+          <img src="images/Sanne-Schmidhamer.jpg" alt="Sanne Schmidhamer - sportmasseur" class="rounded-organic shadow-xl w-full object-cover" loading="lazy">
+        </div>
+        <div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-txt mb-6">Sanne Schmidhamer</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4">Gediplomeerd sportmasseur met een praktijk aan huis in Megen en lid van het Nederlands Genootschap voor Sportmassage (NGS).</p>
+          <p class="text-gray-600 leading-relaxed mb-6">Vanaf 1983 actief in de budosport karate, later ook hardlopen en fitness. Na jaren als leidinggevende bij een autobedrijf werd het tijd om met de handen te werken.</p>
+          <div class="flex flex-wrap gap-3 mb-8">
+            <span class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium">NGS Diploma 2014</span>
+            <span class="bg-cta/10 text-cta px-4 py-1.5 rounded-full text-sm font-medium">Blessurepreventie</span>
+            <span class="bg-secondary/40 text-txt px-4 py-1.5 rounded-full text-sm font-medium">Medical Taping</span>
+          </div>
+          <a href="over-mij.html" class="text-cta font-semibold hover:underline cursor-pointer">Lees meer over mij →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-txt mb-4">Wat klanten zeggen</h2>
+        <div class="flex items-center justify-center gap-2 text-lg">
+          <span class="text-yellow-500">★★★★★</span>
+          <span class="text-gray-600 font-medium">5.0 op Google</span>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-organic p-8 shadow-md">
+          <div class="text-yellow-500 mb-4">★★★★★</div>
+          <p class="text-gray-600 italic leading-relaxed mb-6">"Echt fantastisch! Ik kom hier regelmatig met verschillende klachten en de massage helpt altijd."</p>
+          <div class="font-semibold text-txt">Olga van Vugt</div>
+        </div>
+        <div class="bg-white rounded-organic p-8 shadow-md">
+          <div class="text-yellow-500 mb-4">★★★★★</div>
+          <p class="text-gray-600 italic leading-relaxed mb-6">"Goede massage, ook sport."</p>
+          <div class="font-semibold text-txt">Teus van de Kuijlen</div>
+        </div>
+        <div class="bg-white rounded-organic p-8 shadow-md">
+          <div class="text-yellow-500 mb-4">★★★★★</div>
+          <p class="text-gray-600 italic leading-relaxed mb-6">"Professionele behandeling in een prettige omgeving. Aanrader voor sporters en niet-sporters."</p>
+          <div class="font-semibold text-txt">Google Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerij preview -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-txt text-center mb-12">Impressie</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="images/Praktijkruimte.jpeg" alt="Praktijkruimte" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/Sportmassage.jpeg" alt="Sportmassage behandeling" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/wellness.jpg" alt="Wellness massage" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/taping.jpg" alt="Tapen" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/vierdaagse.jpg" alt="Vierdaagse" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/hardloper.jpg" alt="Hardloper" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/slide-massage-megen-2.jpg" alt="Massage praktijk" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+        <img src="images/google_place_1.jpg" alt="Praktijk buitenzijde" class="rounded-xl w-full h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-br from-primary to-primary/80 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6">Klaar voor een behandeling?</h2>
+      <p class="text-white/90 text-lg mb-8">Neem contact op voor een afspraak. Parkeren kan op eigen terrein.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0640417406" class="bg-cta hover:bg-cta/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 cursor-pointer">Bel 06-40417406</a>
+        <a href="contact.html" class="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 cursor-pointer border border-white/30">Contactformulier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-serif text-white text-lg font-bold mb-4">Sportmassage Megen</h3>
+          <p class="leading-relaxed">Sanne Schmidhamer<br>Elzenstraat 1<br>5366 CA Megen</p>
+          <p class="mt-3">
+            <a href="tel:0640417406" class="hover:text-white transition-colors duration-200 cursor-pointer">06-40417406</a><br>
+            <a href="mailto:sportmassagemegen@gmail.com" class="hover:text-white transition-colors duration-200 cursor-pointer">sportmassagemegen@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="font-serif text-white text-lg font-bold mb-4">Behandelingen</h3>
+          <ul class="space-y-2">
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Sportmassage</a></li>
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Wellness massage</a></li>
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tapen & bandageren</a></li>
+            <li><a href="tarieven.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tarieven</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-serif text-white text-lg font-bold mb-4">Keurmerk</h3>
+          <p class="leading-relaxed mb-3">Aangesloten bij het Nederlands Genootschap voor Sportmassage</p>
+          <a href="http://www.ngsmassage.nl" target="_blank" rel="noopener" class="hover:text-white transition-colors duration-200 cursor-pointer">www.ngsmassage.nl</a>
+          <img src="images/logo_ngs.png" alt="NGS logo" class="mt-4 h-12 opacity-70" loading="lazy">
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-8 text-center text-sm">
+        <p>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
